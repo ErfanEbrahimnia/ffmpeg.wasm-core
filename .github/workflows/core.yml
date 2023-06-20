@@ -86,8 +86,8 @@ jobs:
         run: |
           bash build-with-docker.sh \
             install-deps \
-            configure-ffmpeg \
-            build-ffmpeg
+            configure-ffmpeg.png-to-mp4 \
+            build-ffmpeg.png-to-mp4
       - uses: actions/upload-artifact@master
         with:
           name: ffmpeg-core
