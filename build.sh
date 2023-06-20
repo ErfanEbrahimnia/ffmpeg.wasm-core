@@ -31,12 +31,12 @@ run-all() {
 		build-harfbuzz
 		build-libass
 		#build-aom # disabled as it is extremely slow
-		configure-ffmpeg
-    build-ffmpeg
+    # configure-ffmpeg
+    # build-ffmpeg
     # configure-ffmpeg.mp4-scale
     # build-ffmpeg.mp4-scale
-    # configure-ffmpeg.png-to-mp4
-    # build-ffmpeg.png-to-mp4
+    configure-ffmpeg.png-to-mp4
+    build-ffmpeg.png-to-mp4
   )
   run ${SCRIPTS[@]}
 }
