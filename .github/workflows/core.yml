@@ -9,7 +9,7 @@ on:
 
 env:
   FFMPEG_ST: no
-  DIST_PATH: wasm/packages/core/dist
+  DIST_PATH: wasm/packages/core.png-to-mp4/dist
   CACHE_KEY_PREFIX: ffmpeg.wasm-core
   # EM_VERSION: 2.0.8
   # EM_CACHE_FOLDER: 'emsdk-cache'
