@@ -9,7 +9,7 @@ on:
 
 env:
   FFMPEG_ST: yes
-  DIST_PATH: wasm/packages/core-st/dist
+  DIST_PATH: wasm/packages/core-st.png-to-mp4/dist
   CACHE_KEY_PREFIX: ffmpeg.wasm-core-st
   # EM_VERSION: 2.0.8
   # EM_CACHE_FOLDER: 'emsdk-cache'
@@ -86,8 +86,8 @@ jobs:
         run: |
           bash build-with-docker.sh \
             install-deps \
-            configure-ffmpeg \
-            build-ffmpeg
+            configure-ffmpeg.png-to-mp4 \
+            build-ffmpeg.png-to-mp4
       - uses: actions/upload-artifact@master
         with:
           name: ffmpeg-core
