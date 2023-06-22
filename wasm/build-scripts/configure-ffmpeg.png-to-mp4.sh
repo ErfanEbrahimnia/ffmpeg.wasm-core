@@ -15,12 +15,12 @@ FLAGS=(
   --enable-swresample
   --enable-swscale
   --enable-decoder=png
-  --enable-encoder=png,libx264
-  --enable-parser=h264,png
+  --enable-encoder=png,libx264,gif
+  --enable-parser=h264,png,gif
   --enable-protocol=file
   --enable-demuxer=image2
-  --enable-muxer=mp4
-  --enable-filter=scale,format,null
+  --enable-muxer=mp4,gif
+  --enable-filter=scale,format,fps,palettegen,paletteuse,null
 
 )
 echo "FFMPEG_CONFIG_FLAGS=${FLAGS[@]}"
