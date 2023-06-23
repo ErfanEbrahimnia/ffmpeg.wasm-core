@@ -20,7 +20,7 @@ FLAGS=(
   --enable-protocol=file
   --enable-demuxer=image2
   --enable-muxer=gif
-  --enable-filter=scale,format,fps,palettegen,paletteuse,null
+  --enable-filter=scale,format,fps,split,palettegen,paletteuse,null
 
 )
 echo "FFMPEG_CONFIG_FLAGS=${FLAGS[@]}"
